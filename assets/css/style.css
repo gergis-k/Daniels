@@ -1,0 +1,1045 @@
+/* 
+------------------ Table of Content ------------------
+1) Navbar
+2) Hero
+3) About
+4) Services
+5) Portfolio
+6) Testimonials
+7) Contact
+8) Footer
+*/
+
+
+/* ===========================================
+                    Navbar                  
+=========================================== */
+.navbar {
+    box-shadow: 0px 30px 50px rgb(0 0 0 / 5%);
+    padding: 12.5px 0;
+}
+
+.navbar .navbar-brand {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #1c1c1c;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #111;
+    font-size: 14px;
+    position: relative;
+    padding: 2px 0;
+    margin: 6px 20px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+        display: inline-block;
+    }
+}
+
+.navbar .navbar-nav .nav-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.navbar .navbar-nav .active::before {
+    width: 100%;
+}
+
+
+
+/* ===========================================
+                    Header                  
+=========================================== */
+.header {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+.header .content h5 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.header .content h1 {
+    font-weight: 200;
+}
+
+.header .content .words-wrapper::after {
+    content: '';
+    -webkit-animation: writing 10s alternate infinite;
+    animation: writing 10s alternate infinite;
+    font-weight: 400;
+}
+
+@-webkit-keyframes writing {
+    0% {
+        content: '';
+    }
+
+    1% {
+        content: 'D|';
+    }
+
+    3% {
+        content: 'De';
+    }
+
+    4% {
+        content: 'Dev|';
+    }
+
+    6% {
+        content: 'Deve';
+    }
+
+    7% {
+        content: 'Devel|';
+    }
+
+    9% {
+        content: 'Develo';
+    }
+
+    10% {
+        content: 'Develop|';
+    }
+
+    12% {
+        content: 'Develope';
+    }
+
+    13% {
+        content: 'Developer|';
+    }
+
+    15% {
+        content: 'Developer';
+    }
+
+    16% {
+        content: 'Developer|';
+    }
+
+    17% {
+        content: 'Developer';
+    }
+
+
+    18% {
+        content: 'Developer';
+    }
+
+    19% {
+        content: 'Develope|';
+    }
+
+    21% {
+        content: 'Develop';
+    }
+
+    22% {
+        content: 'Develo|';
+    }
+
+    24% {
+        content: 'Devel';
+    }
+
+    25% {
+        content: 'Deve|';
+    }
+
+    27% {
+        content: 'Dev';
+    }
+
+    28% {
+        content: 'De|';
+    }
+
+    30% {
+        content: 'D';
+    }
+
+    31% {
+        content: '|';
+    }
+
+    33% {
+        content: '';
+    }
+
+    34% {
+        content: 'L|';
+    }
+
+    36% {
+        content: 'La';
+    }
+
+    37% {
+        content: 'Lar|';
+    }
+
+    39% {
+        content: 'Larr';
+    }
+
+    40% {
+        content: 'Larry|';
+    }
+
+    42% {
+        content: 'Larry D|';
+    }
+
+    43% {
+        content: 'Larry Da';
+    }
+
+    45% {
+        content: 'Larry Dan|';
+    }
+
+    46% {
+        content: 'Larry Dani';
+    }
+
+    48% {
+        content: 'Larry Danie|';
+    }
+
+    50% {
+        content: 'Larry Daniel';
+    }
+
+    50.5% {
+        content: 'Larry Daniel';
+    }
+
+    51% {
+        content: 'Larry Daniel';
+    }
+
+    52% {
+        content: 'Larry Daniels|';
+    }
+
+    53% {
+        content: 'Larry Daniels';
+    }
+
+    54% {
+        content: 'Larry Daniels|';
+    }
+
+    56% {
+        content: 'Larry Daniel';
+    }
+
+    57% {
+        content: 'Larry Danie|';
+    }
+
+    59% {
+        content: 'Larry Dani';
+    }
+
+    60% {
+        content: 'Larry Dan|';
+    }
+
+    62% {
+        content: 'Larry Da';
+    }
+
+    63% {
+        content: 'Larry D|';
+    }
+
+    65% {
+        content: 'Larry |';
+    }
+
+    66% {
+        content: 'Larry';
+    }
+
+    68% {
+        content: 'Larr|';
+    }
+
+    69% {
+        content: 'Larr';
+    }
+
+    71% {
+        content: 'Lar|';
+    }
+
+    72% {
+        content: 'La';
+    }
+
+    74% {
+        content: 'L|';
+    }
+
+    75% {
+        content: '';
+    }
+
+    77% {
+        content: 'D|';
+    }
+
+    78% {
+        content: 'De';
+    }
+
+    80% {
+        content: 'Des|';
+    }
+
+    81% {
+        content: 'Desi';
+    }
+
+    83% {
+        content: 'Desig|';
+    }
+
+    84% {
+        content: 'Design';
+    }
+
+    86% {
+        content: 'Designer|';
+    }
+
+    87% {
+        content: 'Designer';
+    }
+
+    87.5% {
+        content: 'Designer';
+    }
+
+    88% {
+        content: 'Designer';
+    }
+
+    89% {
+        content: 'Designer|';
+    }
+
+    90% {
+        content: 'Design';
+    }
+
+    92% {
+        content: 'Desig|';
+    }
+
+    93% {
+        content: 'Desi';
+    }
+
+    95% {
+        content: 'Des|';
+    }
+
+    96% {
+        content: 'De';
+    }
+
+    98% {
+        content: 'D|';
+    }
+
+    100% {
+        content: '';
+    }
+
+}
+
+@keyframes writing {
+    0% {
+        content: '';
+    }
+
+    1% {
+        content: 'D|';
+    }
+
+    3% {
+        content: 'De';
+    }
+
+    4% {
+        content: 'Dev|';
+    }
+
+    6% {
+        content: 'Deve';
+    }
+
+    7% {
+        content: 'Devel|';
+    }
+
+    9% {
+        content: 'Develo';
+    }
+
+    10% {
+        content: 'Develop|';
+    }
+
+    12% {
+        content: 'Develope';
+    }
+
+    13% {
+        content: 'Developer|';
+    }
+
+    15% {
+        content: 'Developer';
+    }
+
+    16% {
+        content: 'Developer|';
+    }
+
+    17% {
+        content: 'Developer';
+    }
+
+
+    18% {
+        content: 'Developer';
+    }
+
+    19% {
+        content: 'Develope|';
+    }
+
+    21% {
+        content: 'Develop';
+    }
+
+    22% {
+        content: 'Develo|';
+    }
+
+    24% {
+        content: 'Devel';
+    }
+
+    25% {
+        content: 'Deve|';
+    }
+
+    27% {
+        content: 'Dev';
+    }
+
+    28% {
+        content: 'De|';
+    }
+
+    30% {
+        content: 'D';
+    }
+
+    31% {
+        content: '|';
+    }
+
+    33% {
+        content: '';
+    }
+
+    34% {
+        content: 'L|';
+    }
+
+    36% {
+        content: 'La';
+    }
+
+    37% {
+        content: 'Lar|';
+    }
+
+    39% {
+        content: 'Larr';
+    }
+
+    40% {
+        content: 'Larry|';
+    }
+
+    42% {
+        content: 'Larry D|';
+    }
+
+    43% {
+        content: 'Larry Da';
+    }
+
+    45% {
+        content: 'Larry Dan|';
+    }
+
+    46% {
+        content: 'Larry Dani';
+    }
+
+    48% {
+        content: 'Larry Danie|';
+    }
+
+    50% {
+        content: 'Larry Daniel';
+    }
+
+    50.5% {
+        content: 'Larry Daniel';
+    }
+
+    51% {
+        content: 'Larry Daniel';
+    }
+
+    52% {
+        content: 'Larry Daniels|';
+    }
+
+    53% {
+        content: 'Larry Daniels';
+    }
+
+    54% {
+        content: 'Larry Daniels|';
+    }
+
+    56% {
+        content: 'Larry Daniel';
+    }
+
+    57% {
+        content: 'Larry Danie|';
+    }
+
+    59% {
+        content: 'Larry Dani';
+    }
+
+    60% {
+        content: 'Larry Dan|';
+    }
+
+    62% {
+        content: 'Larry Da';
+    }
+
+    63% {
+        content: 'Larry D|';
+    }
+
+    65% {
+        content: 'Larry |';
+    }
+
+    66% {
+        content: 'Larry';
+    }
+
+    68% {
+        content: 'Larr|';
+    }
+
+    69% {
+        content: 'Larr';
+    }
+
+    71% {
+        content: 'Lar|';
+    }
+
+    72% {
+        content: 'La';
+    }
+
+    74% {
+        content: 'L|';
+    }
+
+    75% {
+        content: '';
+    }
+
+    77% {
+        content: 'D|';
+    }
+
+    78% {
+        content: 'De';
+    }
+
+    80% {
+        content: 'Des|';
+    }
+
+    81% {
+        content: 'Desi';
+    }
+
+    83% {
+        content: 'Desig|';
+    }
+
+    84% {
+        content: 'Design';
+    }
+
+    86% {
+        content: 'Designer|';
+    }
+
+    87% {
+        content: 'Designer';
+    }
+
+    87.5% {
+        content: 'Designer';
+    }
+
+    88% {
+        content: 'Designer';
+    }
+
+    89% {
+        content: 'Designer|';
+    }
+
+    90% {
+        content: 'Design';
+    }
+
+    92% {
+        content: 'Desig|';
+    }
+
+    93% {
+        content: 'Desi';
+    }
+
+    95% {
+        content: 'Des|';
+    }
+
+    96% {
+        content: 'De';
+    }
+
+    98% {
+        content: 'D|';
+    }
+
+    100% {
+        content: '';
+    }
+
+}
+
+.header .social-links a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 18px;
+}
+
+
+.header .social-links>li {
+    display: inline-block;
+}
+
+
+/* ===========================================
+                    Header                  
+=========================================== */
+.hero {
+    padding: 100px 0;
+}
+
+.hero .hero-img {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.hero .hero-img::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.hero .content h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.hero .content .sub-title {
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero .content p {
+    color: #748182;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .content p span {
+    font-weight: 700;
+}
+
+.hero .content .progress {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    height: 25px;
+    position: relative;
+}
+
+.hero .content .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    line-height: 25px;
+}
+
+.hero .content .progress-bar {
+    background: #1c1c1c;
+    text-align: right;
+}
+
+.hero .custom-btn-dark:hover {
+    background: transparent;
+    color: #212529;
+}
+
+
+/* ===========================================
+                    Services                  
+=========================================== */
+.services .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    color: #343434;
+    background: #f4f4f4;
+    padding: 18px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.services .card:hover .icon {
+    color: #f4f4f4;
+    background: #343434;
+}
+
+.services .card .card-title {
+    font-weight: 800;
+}
+
+.services .card .card-text {
+    color: #748182;
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+
+
+
+/* ===========================================
+                    Portfolio                  
+=========================================== */
+
+
+.portfolio .nav .nav-link {
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    padding: 2px 0;
+    margin: 6px 12px;
+    cursor: pointer;
+}
+
+.portfolio .nav .nav-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.portfolio .nav .nav-link:hover::before,
+.portfolio .nav .active.nav-link::before {
+    width: 100%;
+}
+
+.portfolio .gallary-product .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .gallary-product .item .caption {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.portfolio .gallary-product .item:hover {
+    cursor: pointer;
+}
+
+.portfolio .gallary-product .item:hover .caption {
+    background: white;
+}
+
+.portfolio .gallary-product .item .caption h5 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #343434;
+    -webkit-transition: opacity 0.3s 0.1s ease-in-out, -webkit-transform 0.3s 0.2s ease-in-out;
+    transition: opacity 0.3s 0.1s ease-in-out, -webkit-transform 0.3s 0.2s ease-in-out;
+    transition: opacity 0.3s 0.1s ease-in-out, transform 0.3s 0.2s ease-in-out;
+    transition: opacity 0.3s 0.1s ease-in-out, transform 0.3s 0.2s ease-in-out, -webkit-transform 0.3s 0.2s ease-in-out;
+}
+
+.portfolio .gallary-product .item:hover .caption h5 {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+
+/* ===========================================
+                    Clients                  
+=========================================== */
+
+.clients .carousel .carousel-item .author-img {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.clients .carousel .carousel-item p {
+    word-spacing: 2px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: #748182;
+}
+
+.clients .carousel .carousel-item h6 {
+    font-weight: 600;
+}
+
+.clients .carousel .carousel-item span {
+    font-weight: 600;
+    color: #888;
+}
+
+.clients .carousel .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D6D6D6;
+}
+
+.clients .carousel .carousel-indicators [data-bs-target].active,
+.clients .carousel .carousel-indicators [data-bs-target]:hover {
+    background-color: #869791;
+}
+
+
+/* ===========================================
+                    Numbers                  
+=========================================== */
+
+.numbers .item .counter {
+    font-size: 30px;
+    font-weight: 900;
+    color: #343434;
+}
+
+.numbers .item p {
+    font-weight: 600;
+    line-height: 1.6;
+    color: #748182;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===========================================
+                    Blog
+=========================================== */
+
+.blog .badge {
+    padding: 0;
+}
+
+.blog .card-body {
+    min-height: 163.2px;
+}
+
+.blog .badge,
+.blog .badge:hover {
+    color: rgb(136, 136, 136);
+}
+
+.blog .owl-carousel .img-con {
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog .owl-carousel .img-con img {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.blog .owl-carousel .img-con img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+
+/* ===========================================
+                    Contact
+=========================================== */
+.contact .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    color: #343434;
+    background: #f4f4f4;
+    padding: 18px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.contact .item:hover .icon {
+    color: #f4f4f4;
+    background: #343434;
+}
+
+.contact .item h5 {
+    font-weight: 800;
+}
+
+.services .item p {
+    color: #748182;
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+
+.contact .form-control {
+    border: 0;
+    padding: 10px;
+    background: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+
+.form-control:focus {
+    color: #343434;
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    box-shadow: unset;
+}
+
+.contact .custom-btn-dark:hover {
+    background: transparent;
+    color: #212529;
+}
+
+
+
+/* ===========================================
+                    Footer
+=========================================== */
+.footer {
+    background: #1c1c1c;
+}
+
+.footer p {
+    line-height: 1.6;
+    color: #748182;
+}
